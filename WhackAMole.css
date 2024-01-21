@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('images/WackAMoleBackgound.jpg');
+    background-size: cover;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: inline-block;
+    padding: 60px;
+    vertical-align: top !important;
+}
+
+.child{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.main{
+    display: inline-block;
+    flex-direction: column;
+    align-content: center;
+    width: 50rem;
+    justify-content: center;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.main h1{
+    font-size: 54px;
+    font-weight: 100;
+    color: black;
+    font-style: italic;
+    border: 4px solid rgb(167, 83, 184);
+    border-radius: 32px;
+    text-shadow: 2px 2px 4px rgba(172, 78, 180, 0.3);
+    font-family: Arial, sans-serif;
+
+}
+
+.main h2{
+    display: inline-block;
+    background: rgb(233, 168, 252);
+    border: 4px solid rgb(167, 83, 184);
+    border-radius: 32px;
+    margin: 6px;
+    padding: 12px 20px;
+}
+
+button{
+    margin: 6px;
+    width: 12rem;
+    padding: 10px 5px;
+    color: white;
+    border-radius: 32px;
+    border: 4px solid rgb(208, 151, 221);
+    background: rgb(151, 62, 224);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+#pauseGame{
+    display: none;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+#score{
+    border-radius: 4px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+#timeleft{
+    border-radius: 4px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.grid{
+    display: inline-block;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.grid-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.square{
+    width: 180px;
+    height: 160px;
+    border: 4px solid rgb(233, 168, 252);
+    border-radius: 12px;
+    box-shadow: 1p 3px 5px rgb(151, 62, 224);
+    margin: 10px;
+}
+
+.mole{
+    background: url(/images/Girl.jpg);
+    background-size: cover;
+}
